@@ -1,6 +1,6 @@
 h1 {
     height: auto;
-    width: 420px;
+    width: 450px;
     padding: 10px;
     margin: auto;
 
@@ -15,12 +15,29 @@ h1 {
 }
 
 .paragraph {
+    display: flex;
     height: auto;
     width: auto;
-    margin: 100px;
+    margin: 50px;
+    margin-left: 300px;
+    margin-right: 300px;
 
     font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
+    font-size: 32px;
+    align-items: center;
+    justify-content: center;
+    padding: 32px;
+    background-color: rgb(220, 229, 241);
+    border: solid 8px rgb(54, 0, 92);
+    border-radius: 24px;
+}
+
+.pages {
+    padding: 0px 16px;
+}
+
+.page {
+    border-radius: 12px;
 }
 
 .header  {
@@ -59,4 +76,19 @@ a {
     padding: 8px;
     /* this removes the line under the links */
     text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+}
+
+a:visited {
+    color: rgb(54, 0, 92);
+}
+
+.pages-in-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    margin: 0;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 0;
+    display: flex;
 }
