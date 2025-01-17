@@ -95,30 +95,32 @@ h1 {
     display: flex;
     align-items: center;
     gap: 64px;
+    justify-content: center;
   }
 
   .proj {
     margin: 48px;
     background-color: rgb(225, 233, 240);
     border: 8px solid rgb(68, 38, 88);
-    height: 620px;
+    height: 100%;
+    min-height: 620px;
     width: 725px;
     border-radius: 24px;
-    flex-grow: 1;
   }
 
   img {
-    width: 350px;
+    width: 40%;
   }
 
   .img-tos {
-    width: 210px;
+    width: 190px;
   }
 
   .proj-body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 24px;
   }
 
   .text {
@@ -127,7 +129,6 @@ h1 {
     margin-bottom: 12px;
     font-size: 18px;
     line-height: 36px;
-    flex-grow: 0;
   }
 
   .game-button {
