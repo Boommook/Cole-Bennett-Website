@@ -17,20 +17,11 @@ h1 {
 
 .paragraph {
     display: flex;
-    height: auto;
-    width: auto;
-    margin: 50px;
-    margin-left: 300px;
-    margin-right: 300px;
-
     font-family: 'Montserrat', sans-serif;
-    font-size: 32px;
+    font-size: 28px;
     align-items: center;
     justify-content: center;
-    padding: 32px;
-    background-color: rgb(220, 229, 241);
-    border: solid 8px rgb(54, 0, 92);
-    border-radius: 24px;
+    margin-left: 20px;
 }
 
 .pages {
@@ -92,4 +83,20 @@ a:visited {
     color: #000000;
     padding: 0;
     display: flex;
+}
+
+.textbox {
+    display: flex;
+    height: auto;
+    min-width: 150px;
+    margin: 50px;
+    margin-left: 300px;
+    margin-right: 300px;
+
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    background-color: rgb(220, 229, 241);
+    border: solid 8px rgb(54, 0, 92);
+    border-radius: 24px;
 }
