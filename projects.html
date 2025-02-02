@@ -70,16 +70,82 @@
           <div class="project-title">Character Model of 'Thorkell'</div>
           <div class="proj-body">
             <div class="thorkell-model-proj">
-              <div class="images">
-                <img src="./images/thorkellfront_orig.png" alt="Thorkell Model Front View" class = "thorkell-model-img">
+              <div class="slideshow-and-dots">
+                <div class="slideshow-container">
+                  <!--slideshow images-->
+                  <div class="mySlides fade">
+                    <div class="numbertext">1 / 4</div>
+                    <img src="./images/thorkellfront_orig.png" style="width:100%">
+                  </div>
+                  <div class="mySlides fade">
+                    <div class="numbertext">2 / 4</div>
+                    <img src="./images/thorkellthreequarters_orig.png" style="width:100%">
+                  </div>
+                  <div class="mySlides fade">
+                    <div class="numbertext">3 / 4</div>
+                    <img src="./images/thorkellthreequartersback_orig.png" style="width:100%">
+                  </div>
+                  <div class="mySlides fade">
+                    <div class="numbertext">4 / 4</div>
+                    <img src="./images/thorkellback_orig.png" style="width:100%">
+                  </div>
+
+                  <!--next and previous buttons-->
+                  <a class="prev" onClick="plusSlides(-1)">&#10094;</a>
+                  <a class="next" onClick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+
+                <!--dots in slideshow-->
+                <div style="text-align: center;">
+                  <span class="dot" onClick="currentSlide(1)"></span>
+                  <span class="dot" onClick="currentSlide(2)"></span>
+                  <span class="dot" onClick="currentSlide(3)"></span>
+                  <span class="dot" onClick="currentSlide(4)"></span>
+                </div>
+
+                <script>
+                  let slideIndex = -1;
+                  showSlides(slideIndex);
+
+                  // fcn for next and prev
+                  function plusSlides(n){
+                    showSlides(slideIndex += n);
+                  }
+                  
+                  // thumbnail controls
+                  function currentSlide(n){
+                    showSlides(slideIndex = n);
+                  }
+
+                  function showSlides(n){
+                    let i;
+                    let slides = document.getElementsByClassName("mySlides");
+                    let dots = document.getElementsByClassName("dot");
+                    if(n > slides.length) {
+                      slideIndex = 1;
+                    }
+                    if(n < 1){
+                      slideIndex = slides.length;
+                    }
+                    for(i = 0; i < slides.length; i++){
+                      slides[i].style.display = "none";
+                    }
+                    for(i = 0; i < dots.length; i++){
+                      dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex - 1].style.display = "block";
+                    dots[slideIndex - 1].className += " active";
+                  }
+                </script>
               </div>
+
               <div class="thorkell-model-text-img">
                 <p class="text" class="thorkell-model-text">
                   I used ZBrush to 3D model and paint the character, 'Thorkell', from Vinland Saga in an A-pose for 3D Modeling I or AR/IMGD 2101 at WPI. 
                   This was a fairly simple project that took just a few weeks, but it was a good benchmark of my growth in 3D modeling.
                   If you'd like to see more views of my model, click the button below!
                 </p>
-                <a href="https://drive.google.com/drive/u/0/folders/11NZuhAcbMwbKFAJCDE1190WE-ew8qxQo" target="_blank" rel="noopener noreferrer" class="button-link"><button class="game-button"><em>Model Images</em></button></a>
               </div>
             </div>
           </div>
