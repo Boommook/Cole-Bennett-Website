@@ -1,3 +1,9 @@
+body {
+    background-image: url("images/tech-background.jpg");
+    background-repeat: repeat;
+    background-size: 55%;
+}
+
 h1 {
     height: auto;
     width: 250px;
@@ -12,7 +18,7 @@ h1 {
 
 
     color: rgb(54, 0, 92);
-    background-color: rgb(175, 191, 224);
+    background-color: rgb(155, 173, 209);
 }
 
 .pages {
@@ -25,8 +31,18 @@ h1 {
 
 .body {
     display: flex;
+    height: auto;
+    min-width: 150px;
+    margin: 50px;
+    margin-left: 300px;
+    margin-right: 300px;
+
     align-items: center;
     justify-content: center;
+    padding: 16px;
+    background-color: rgb(220, 229, 241);
+    border: solid 8px rgb(54, 0, 92);
+    border-radius: 24px;
 }
 
 img {
@@ -44,7 +60,7 @@ img {
 
 .header  {
     font-family: monospace;
-    background: rgb(186, 205, 228);
+    background: rgb(155, 173, 209);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -107,7 +123,7 @@ a:visited {
 
 
     color: rgb(54, 0, 92);
-    background-color: rgb(175, 191, 224);
+    background-color: rgb(155, 173, 209);
 }
 
 .images-row {
